@@ -1,0 +1,47 @@
+<div class="row">
+	<div class="col lg-3 filterbar1">
+		<select class="form-conrol custom-select custom-select-lg mb-3" [(ngModel)]="term">
+		  <option value="All">All</option>
+		  <option value="Men Accessories">Men Accessories</option>
+		  <option value="Women Accessories">Women Accessories</option>
+		  <option value="Children Accessories">Children Accessories</option>
+		  <option value="Sports Accessories">Sports Accessories</option>
+		</select>
+	</div>
+	<div class="col lg-3 filterbar2">
+		<select class="form-conrol custom-select custom-select-lg mb-3" [(ngModel)]="pricefilter">
+		  <option selected value="">All</option>
+		  <option value="5"><$5</option>
+		  <option value="10">$5-$10</option>
+		  <option value="15">$10-$15</option>
+		  <option value="20">$15-$20</option>
+		  <option value="21">>$20</option>
+		</select>
+	</div>
+</div>
+
+<div class="alert alert-success" role="alert" *ngIf="showItemAdded">
+  Item successfully added to cart
+</div>
+<div class="alert alert-danger" role="alert" *ngIf="showItemExisting">
+  Item already in the cart
+</div>
+<div class="container">
+  <div class="row justify-content">
+  <div class="col col-lg-4" *ngFor="let product of products | productFilter:term:pricefilter">
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" width="150px" height="150px" src="{{product.image}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{product.name}}</h5>
+          <p class="card-text"><label>Category</label>: {{product.category}}</p>
+          <p class="card-text"><small class="text-muted"><label>Price</label>: $ {{product.price}}</small></p>
+          <p><button type="button" class="btn btn-outline-success" (click)="addToCart(product.id)">Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+</div>

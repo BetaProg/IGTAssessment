@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row justify-content">
+    <div class="col col-lg-2" *ngFor="let product of cartItemsFinal">
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" width="200px" height="100px" src="{{product.image}}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{product.name}}</h5>
+            <p class="card-text">{{product.category}}</p>
+            <p class="card-text"><small class="text-muted">{{product.price}}</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

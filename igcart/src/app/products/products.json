@@ -1,0 +1,58 @@
+[
+      {
+        "id": 1,
+        "name": "Winter Jacket",
+        "category": "Men Accessories",
+        "price": 20,
+        "image": "http://www.dolchefashion.com/wp-content/uploads/2017/08/mens-winter-coats-product-image-%C2%B7-columbia-men-u0027s-watertight-ii-rain-jacket-nvprlom-.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Wrist Watch",
+        "category": "Men Accessories",
+        "price": 30,
+        "image": "http://www.britishwatchcompany.com/images/mens-all-black-every-day-ted-baker-wrist-watch-p3916-11030_zoom.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Wrist Band",
+        "category": "Women Accessories",
+        "price": 5,
+        "image": "http://i.ebayimg.com/images/i/161169398139-0-1/s-l1000.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Hand bag",
+        "category": "Women Accessories",
+        "price": 20,
+        "image": "http://i.ebayimg.com/images/i/361680681409-0-1/s-l1000.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Shoes",
+        "category": "Children Accessories",
+        "price": 20,
+        "image": "https://i.pinimg.com/originals/5e/fb/62/5efb629ac20e94ff7aa4bf8a68785cfd.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Kids Scraf",
+        "category": "Children Accessories",
+        "price": 10,
+        "image": "http://www.melijoe.com/us/kenzo-kids-scarves-p_z_18475_A.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Soccer Ball",
+        "category": "Sports Accessories",
+        "price": 20,
+        "image": "https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/06/10113048/Soccer-Ball-Transparent-Background-PNG-1018x1024.png"
+      },
+      {
+        "id": 8,
+        "name": "Base Ball",
+        "category": "Sports Accessories",
+        "price": 15,
+        "image": "https://www.procon.org/files/1-obesity-images/baseball.jpg"
+      }    
+]

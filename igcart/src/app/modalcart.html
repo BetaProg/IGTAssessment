@@ -1,0 +1,54 @@
+<ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Cart Details</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body" style='font-family:calibri'>
+      <div class="container" *ngIf="!confirmation">
+        <div class="row justify-content">
+            <ul class="list-unstyled" style="width:100%;">
+                <h4><label>Cart Total</label>: $ {{cartTotal}}</h4>
+                <li class="media" *ngFor="let product of cartItemsFinal" style="background-color: #ddd;
+                border: 1px solid #f2f2f2;
+                width: 100%;
+                margin: 1%;">
+                  <img src="{{product.image}}"  width="50px" height="50px"  class="mr-3" alt="image">
+                  <div class="media-body">
+					<div class="row">
+						<div class="col lg-8">
+							<h5 class="mt-0 mb-1">{{product.name}}</h5>
+							{{product.category}}
+						</div>
+						<div class="col lg-4">
+							<p><label>Price: </label><b> $ {{product.price}}</b></p>
+						</div>
+					</div>
+                  </div>
+                </li>
+              </ul>
+        </div>
+      </div>
+
+	  <!-- Purchase receipt section start -->
+	  <div class="receipt" *ngIf="confirmation">
+		<h5>Purchase Receipt - IGT987654321</h5>
+		<ul class="list-group">
+		  <li *ngFor="let product of cartItemsFinal" class="list-group-item">{{product.name}} - {{product.price}}</li>
+		</ul>
+	  </div>
+	  <!-- Purchase receipt section end -->
+
+
+
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="confirmation=true;">Confirm</button>
+    </div>
+  </ng-template>
+  
+  <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Cart</button>
+  
+  <pre>{{closeResult}}</pre>
